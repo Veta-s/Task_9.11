@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-6 offset-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h2><p class="m-1">Окно результатов генерации</p></h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="card-title">Фамилия: <span id="surnameOutput">Иванов</span></h3>
+                            <h3>Имя и Отчество: <span id="firstNameOutput">Иван</span> <span id="middleNameOutput">Иванович</span></h3>
+                            <p>
+                                <span id="genderOutput">Мужской</span>
+                                <span class="comma">, </span>
+                                <span id="birthDateOutput">1 января</span> <span id="birthYearOutput">2000 года</span>
+                                <span class="comma">, </span>
+                                <span id="professionOutput">профессия</span>
+                            </p>
+                        </div>
+                    </div>
+                    <button type="submit" id="resultGenerate">Показать новый результат</button>
+                    <button type="reset" id="resultReset">Очистить поле</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="personGenerator.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
